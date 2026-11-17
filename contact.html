@@ -1,0 +1,147 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Studio | Contact</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <!-- Website Logo -->
+            <a href="index.html" class="brand">
+                Nova<span>Studio</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="nav-links" id="navLinks">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="contact.html" class="active">Contact</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="section container contact-grid">
+
+            <!-- Contact Information -->
+            <div>
+
+                <p class="eyebrow">CONTACT</p>
+
+                <h1>Let's build something useful.</h1>
+
+                <p>
+                    This form demonstrates JavaScript event handling,
+                    input validation and DOM manipulation.
+                </p>
+
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" id="contactForm">
+
+                <!-- Name Field -->
+                <label for="name">Name</label>
+
+                <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <!-- Email Field -->
+                <label for="email">Email</label>
+
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="you@example.com"
+                    required
+                >
+
+                <!-- Message Field -->
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Enter your message"
+                    required
+                ></textarea>
+
+                <!-- Submit Button -->
+                <button class="btn primary" type="submit">
+                    Submit
+                </button>
+
+                <!-- Form Response Message -->
+                <p
+                    id="formMessage"
+                    class="form-message"
+                    aria-live="polite">
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <p>
+                &copy; <span id="year"></span> Nova Studio
+            </p>
+
+            <p>
+                Full Stack Development Lab
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
